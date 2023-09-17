@@ -73,6 +73,11 @@ while (nopt != 9)
             Console.WriteLine("Введите степень:");
             string b5 = Console.ReadLine();
             b = Convert.ToInt32(b5);
+            if (a == 0 && b<0)
+            {
+                Console.WriteLine("Ошибка!");
+                break;
+            }
             double c5 = Math.Pow(a, b);
             Console.WriteLine("Результат:" + c5);
             break;
